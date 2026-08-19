@@ -1,0 +1,46 @@
+{
+  "project": "121-emblemhealth-actuarial-pricing-reserving",
+  "name": "RateCraft - Health-Plan Actuarial Pricing & IBNR Reserving Engine",
+  "status": "complete",
+  "data_honesty": "All claims data SYNTHETIC and seeded (real claims would be PHI). Only real-world data: published Taylor & Ashe (1983) textbook fixture, sources cited in tests/fixtures/taylor_ashe.json.",
+  "must_have_v1": {
+    "synthetic_claims_generator": true,
+    "reserving_engine_cl_bf": true,
+    "validation_textbook": true,
+    "validation_naive_oracle": true,
+    "reserve_backtest_200_sets": true,
+    "pricing_engine_trend_rates_credibility": true,
+    "excel_exhibits_roundtrip": true,
+    "benchmarks": true,
+    "tests_ge_45_coverage_ge_90": true,
+    "docs": true
+  },
+  "measured": {
+    "textbook_factors_match_4dp": true,
+    "textbook_total_reserve": 18680856,
+    "naive_oracle_max_relative_deviation": 6.984919309616089e-10,
+    "backtest_triangle_sets": 200,
+    "backtest_triangles_total": 600,
+    "ibnr_mape_pct": {
+      "chain_ladder": {"IP": 3.75, "OP": 4.43, "Rx": 7.40},
+      "bornhuetter_ferguson": {"IP": 10.40, "OP": 13.04, "Rx": 7.79}
+    },
+    "ibnr_bias_pct": {
+      "chain_ladder": {"IP": -0.33, "OP": 0.55, "Rx": 1.20},
+      "bornhuetter_ferguson": {"IP": -8.64, "OP": -12.76, "Rx": -4.72}
+    },
+    "ultimate_within_10pct_rate": 1.0,
+    "trend_recovery_mean_abs_error_pp": {"IP": 5.65, "OP": 7.75, "Rx": 3.59},
+    "reconciliation_runs": 200,
+    "reconciliation_violations": 0,
+    "excel_roundtrip_exact": true,
+    "chain_ladder_triangles_per_sec": 9748,
+    "backtest_e2e_seconds": 0.62,
+    "workbook_generation_mean_seconds": 0.021,
+    "tests_passed": 77,
+    "tests_failed": 0,
+    "coverage_ratecraft_pct": 100
+  },
+  "out_of_scope_respected": ["real claims/PHI", "state filing formats", "Mack variance/stochastic reserving", "GLM rating", "risk adjustment (HCC)", "UI/dashboard", "database"],
+  "stack": {"python": "3.9.6", "numpy": "2.0.2", "pandas": "2.3.3", "openpyxl": "3.1.5", "pytest": "8.4.2"}
+}
