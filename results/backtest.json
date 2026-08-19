@@ -1,0 +1,73 @@
+{
+  "honesty": "SYNTHETIC seeded data; ground truth known by construction",
+  "n_triangle_sets": 200,
+  "n_triangles_total": 600,
+  "base_seed": 1000,
+  "within_band": 0.1,
+  "elapsed_seconds": 0.6181890964508057,
+  "aggregate": {
+    "IP": {
+      "methods": {
+        "chain_ladder": {
+          "ibnr_mape_pct": 3.7539577773588126,
+          "ibnr_median_ape_pct": 3.0790736008964688,
+          "ibnr_bias_pct": -0.3287948099706677,
+          "ultimate_within_10pct_rate": 1.0
+        },
+        "bornhuetter_ferguson": {
+          "ibnr_mape_pct": 10.404321832348447,
+          "ibnr_median_ape_pct": 9.744209775025436,
+          "ibnr_bias_pct": -8.638271323656493,
+          "ultimate_within_10pct_rate": 1.0
+        }
+      },
+      "trend_recovery": {
+        "true_trend": 0.08,
+        "mean_abs_error_pp": 5.651330267586637,
+        "max_abs_error_pp": 19.77631829594219
+      }
+    },
+    "OP": {
+      "methods": {
+        "chain_ladder": {
+          "ibnr_mape_pct": 4.427671037378243,
+          "ibnr_median_ape_pct": 3.7731683100811813,
+          "ibnr_bias_pct": 0.5516706239877116,
+          "ultimate_within_10pct_rate": 1.0
+        },
+        "bornhuetter_ferguson": {
+          "ibnr_mape_pct": 13.039594848970856,
+          "ibnr_median_ape_pct": 12.916418990131074,
+          "ibnr_bias_pct": -12.764425518278513,
+          "ultimate_within_10pct_rate": 1.0
+        }
+      },
+      "trend_recovery": {
+        "true_trend": 0.06,
+        "mean_abs_error_pp": 7.752532602110682,
+        "max_abs_error_pp": 16.371773070584855
+      }
+    },
+    "Rx": {
+      "methods": {
+        "chain_ladder": {
+          "ibnr_mape_pct": 7.402422313951401,
+          "ibnr_median_ape_pct": 6.488413649163968,
+          "ibnr_bias_pct": 1.1978717773724008,
+          "ultimate_within_10pct_rate": 1.0
+        },
+        "bornhuetter_ferguson": {
+          "ibnr_mape_pct": 7.790152469057711,
+          "ibnr_median_ape_pct": 6.468580578707704,
+          "ibnr_bias_pct": -4.7226066737862125,
+          "ultimate_within_10pct_rate": 1.0
+        }
+      },
+      "trend_recovery": {
+        "true_trend": 0.1,
+        "mean_abs_error_pp": 3.5879614393979233,
+        "max_abs_error_pp": 9.707088944007328
+      }
+    }
+  }
+}

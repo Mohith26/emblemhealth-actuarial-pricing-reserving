@@ -1,0 +1,16 @@
+{
+  "honesty": "textbook fixture is published data; other triangles SYNTHETIC seeded",
+  "textbook": {
+    "factors_match_published_4dp": true,
+    "max_factor_abs_dev_after_4dp_rounding": 0.0,
+    "ultimates_match_published_rounded_to_unit": true,
+    "max_ultimate_abs_dev_after_unit_rounding": 0.0,
+    "total_reserve_engine": 18680856.0,
+    "total_reserve_published": 18680856,
+    "total_reserve_match": true
+  },
+  "naive_oracle": {
+    "n_triangles_compared": 51,
+    "max_relative_deviation": 6.984919309616089e-10
+  }
+}
