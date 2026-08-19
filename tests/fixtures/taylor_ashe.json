@@ -1,0 +1,19 @@
+{
+  "source": "Taylor, G.C. & Ashe, F.R. (1983), 'Second moments of estimates of outstanding claims', Journal of Econometrics 23. Incremental paid triangle as reproduced and hand-computed in Mack, T. (1993), 'Distribution-free calculation of the standard error of chain ladder reserve estimates', ASTIN Bulletin 23(2) (volume-weighted age-to-age factors) and England, P.D. & Verrall, R.J. (2002), 'Stochastic claims reserving in general insurance', British Actuarial Journal 8 (chain-ladder ultimates; total reserve 18,680,856).",
+  "incremental_paid": [
+    [357848, 766940, 610542, 482940, 527326, 574398, 146342, 139950, 227229, 67948],
+    [352118, 884021, 933894, 1183289, 445745, 320996, 527804, 266172, 425046],
+    [290507, 1001799, 926219, 1016654, 750816, 146923, 495992, 280405],
+    [310608, 1108250, 776189, 1562400, 272482, 352053, 206286],
+    [443160, 693190, 991983, 769488, 504851, 470639],
+    [396132, 937085, 847498, 805037, 705960],
+    [440832, 847631, 1131398, 1063269],
+    [359480, 1061648, 1443370],
+    [376686, 986608],
+    [344014]
+  ],
+  "published_ata_factors_4dp": [3.4906, 1.7473, 1.4574, 1.1739, 1.1038, 1.0863, 1.0539, 1.0766, 1.0177],
+  "published_ultimates": [3901463, 5433719, 5378826, 5297906, 4858200, 5111171, 5660771, 6784799, 5642266, 4969825],
+  "published_total_reserve": 18680856,
+  "latest_diagonal_total": 34358090
+}
